@@ -1,33 +1,38 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: 'product_sans_regular';
+    src: url("assets/fonts/product-sans/ProductSans-Regular.woff") format("woff"), url("assets/fonts/product-sans/ProductSans-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; 
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'product_sans_bold';
+    src: url("assets/fonts/product-sans/ProductSans-Bold.woff") format("woff"), url("assets/fonts/product-sans/ProductSans-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: 'product_sans_italic';
+    src: url("assets/fonts/product-sans/ProductSans-Italic.woff") format("woff"), url("assets/fonts/product-sans/ProductSans-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; 
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: 'product_sans_bold_italic';
+    src: url("assets/fonts/product-sans/ProductSans-BoldItalic.woff") format("woff"), url("assets/fonts/product-sans/ProductSans-BoldItalic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Simple CSS reset */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'product_sans_regular';
 }
