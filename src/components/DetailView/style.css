@@ -3,7 +3,6 @@
 .video-player-container {
     height: auto;
     width: 800px;
-    /* background: #ccc; */
     border-radius: 10px;
     margin-right: 40px;
 }
@@ -113,27 +112,12 @@
 }
 
 .video-player-container .video-account-detail .subscribe-btn .bell:hover {
-    animation: bellshake .5s cubic-bezier(.36,.07,.19,.97) both;
+    animation: bellShake .5s cubic-bezier(.36,.07,.19,.97) both;
     backface-visibility: hidden;
     fill: #FE0000;
 }
 
-@keyframes bellshake {
-    0% { transform: rotate(0); }
-    15% { transform: rotate(5deg); }
-    30% { transform: rotate(-5deg); }
-    45% { transform: rotate(4deg); }
-    60% { transform: rotate(-4deg); }
-    75% { transform: rotate(2deg); }
-    85% { transform: rotate(-2deg); }
-    92% { transform: rotate(1deg); }
-    100% { transform: rotate(0); }
-  }
-  
-
 .video-player-container .video-account-detail .subscribe-btn button {
-    /* width: 200px; */
-    /* height: 40px; */
     border-radius: 30px;
     background: #FE0000;
     border-color: #FE0000;
@@ -403,5 +387,18 @@
         background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
         background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
+  }
+  
+
+  @keyframes bellShake {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(5deg); }
+    30% { transform: rotate(-5deg); }
+    45% { transform: rotate(4deg); }
+    60% { transform: rotate(-4deg); }
+    75% { transform: rotate(2deg); }
+    85% { transform: rotate(-2deg); }
+    92% { transform: rotate(1deg); }
+    100% { transform: rotate(0); }
   }
   

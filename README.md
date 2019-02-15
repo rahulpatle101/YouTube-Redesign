@@ -26,9 +26,21 @@ Also, I noticed Google Suite products are updating their UI hence I wanted to im
 3. Shortlisted the places to improve. 
 4. Coded the layout with HTML/CSS and JS with animations.
 5. Converted markup to React Components and built the app using react-create-app 
-6. Bug Fixes
+6. Bug Fixes (Responsive, setTimeout animation)
 
-his project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Improvements / Next Steps
+0. Add clean comments
+1. Remove inline styles
+2. Add 404 SVG animation for videos not found
+3. Write test cases for UI Components
+4. Break the UI into smaller components
+5. Use Real YouTube API to fetch data
+6. Write BEM for CSS and use CSS preprocessors (LESS, SASS)
+7. Add Dark Mode 
+8. Browser Compatibility testing and css fix
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

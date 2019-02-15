@@ -25,6 +25,8 @@ class DetailView extends Component {
         e.target.classList.remove('animate');
 
         e.target.classList.add('animate');
+
+        //  This needs to be fixed, setTimeout is not the right way to achieve this function
         setTimeout(function(){
             console.log(e)
             e.target.classList.remove('animate');
