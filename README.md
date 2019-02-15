@@ -1,4 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Redesign: YouTube
+
+## How to start the application 
+1. npm install
+2. npm start
+3. Navigate to http://localhost:3000
+
+## Design case
+I choose YouTube to redesign because its a web app that I use in daily basis and I always have struggle when I choose to engage with
+the community for example comments and I generally forget to Subscribe and notice the content creator has to constatntly remind the viewers to subscribe to their channel. 
+
+Also, I noticed Google Suite products are updating their UI hence I wanted to implement modern UI which will align YouTube with Google Ecosystem. 
+
+
+### Areas of Improvement
+
+1. Make the UI Modern similar look and feel with other Google Suite products
+2. Bring attention to Subscribe button by adding animation.
+3. Add hove effects to Like/Dislike buttons for more engagement.
+4. Move the comments to the right tab in Video Streaming view, which makes it easier for used to scroll through the comments. 
+
+### Design Approach
+
+1. I took inspiration from existing Google Suite products UI Design.
+2. Discovered and Researched more areas for improvement for YouTube UI. 
+3. Shortlisted the places to improve. 
+4. Coded the layout with HTML/CSS and JS with animations.
+5. Converted markup to React Components and built the app using react-create-app 
+6. Bug Fixes
+
+his project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
