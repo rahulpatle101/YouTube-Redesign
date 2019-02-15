@@ -1,0 +1,112 @@
+.sidebar-container {
+    width: 245px;
+    position: fixed;
+    top: -120px;
+    right: 0;
+    bottom: -120px;
+    left: 0;
+    /* visibility: hidden; */
+    transition-property: visibility;
+    z-index: 100;
+}
+
+.sidebar-container .spacer {
+    margin-top: 120px;
+    height: 56px;
+}
+.sidebar-container .content {
+    height: 100%;
+    padding: 12px 0;
+}
+
+
+
+.sidebar-container a.item-link {
+    padding: 0 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: 0;
+    display: flex;
+    min-height: 48px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.sidebar-container .item-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+}
+
+.sidebar-container .item-icon svg {
+    fill: #909090;
+}
+
+.sidebar-container a.item-link h2 {
+    color: #696868;
+}
+
+.sidebar-container ul li {
+    list-style: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: .3s all;
+}
+
+.sidebar-container .content ul li:hover, .sidebar-container .content ul li.active {
+    background: #fa1d2e47;
+}
+
+.sidebar-container .content ul li a svg {
+    transition: .3s all;
+}
+
+.sidebar-container .content ul li.active a svg {
+    fill: #fc111d;
+}
+
+.sidebar-container .content ul li:hover a svg {
+    fill: #fc111d;
+}
+
+.sidebar-container .playlist-section, .sidebar-container .settings-section, .sidebar-container .footer-section {
+    border-top: 1px solid #0000001a;
+    margin-top: 12px;
+    padding-top: 12px;
+}
+
+.sidebar-container .footer-section {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.sidebar-container .footer-section .footer-links {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar-container .footer-section .footer-links .link-item {
+    text-decoration: none;
+    color: #696868;
+    cursor: pointer;
+    padding-right: 12px;
+    padding-bottom: 2px;
+}
+
+.sidebar-container .footer-section .copy-right {
+    color: #9a9b9a;
+}
+
+.sidebar-container .footer-links .terms-policy {
+    margin-top: 10px;
+}
+
+
+ /* Media Queries */
+
+ @media screen and (max-width: 1200px) {
+    .sidebar-container .content {
+        display: none;
+    }
+}

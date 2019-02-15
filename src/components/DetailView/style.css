@@ -1,0 +1,368 @@
+/* Video Player */
+
+.video-player-container {
+    height: auto;
+    width: 900px;
+    /* background: #ccc; */
+    border-radius: 10px;
+    margin-right: 100px;
+}
+
+.video-player-container iframe {
+    clip-path: inset(0% 0% 0% 0% round 10px);
+}
+
+.video-player-container .video-details {
+    display: flex;
+    height: 70px;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.video-player-container .video-details .left {
+    flex: 1;
+}
+
+.video-player-container .video-details .left .video-title {
+    font-size: 20px;
+    color: #000000;
+}
+
+.video-player-container .video-details .left .video-view-counts {
+    font-size: 16px;
+    color: #7d7d7d;
+    margin-top: 10px;
+}
+
+.video-player-container .video-details .right {
+    display: flex;
+    align-self: flex-end;
+    flex-basis: 210px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-player-container .video-details .right a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.video-player-container .video-details .right a svg {
+    padding-right: 10px;
+}
+
+.video-player-container .video-account-detail {
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.video-player-container .video-account-detail .account-info {
+    flex: 1;
+    display: flex;
+}
+
+.video-player-container .video-account-detail .account-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.video-player-container .video-account-detail .account-info .name-publish {
+    flex: 1;
+}
+
+.video-player-container .video-account-detail .account-info .name-publish .account-description {
+    margin-top: 20px;
+    color: #000;
+}
+
+
+.video-player-container .video-account-detail .account-info .account-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.video-player-container .video-account-detail .subscribe-btn {
+    display: flex;
+    align-items: center;
+}
+
+.video-player-container .video-account-detail .subscribe-btn a {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.video-player-container .video-account-detail .subscribe-btn button {
+    /* width: 200px; */
+    /* height: 40px; */
+    border-radius: 30px;
+    background: #FE0000;
+    border-color: #FE0000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.comments-suggest-container {
+    width: 400px;
+    position: relative;
+}
+
+.comments-suggest-container .tabs {
+    display: flex;
+}
+
+.comments-suggest-container .tabs button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+}
+
+.comments-container.active, .suggest-video-container.active {
+    display: block;
+}
+
+.comments-container, .suggest-video-container {
+    display: none;
+}
+
+.comments-container, .suggest-video-container {
+    background: #eeeeee38;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+}
+
+.comments-container .comment-summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.comments-container .comment-summary .sort-by {
+    display: flex;
+    align-items: center;
+}
+
+.comments-container .add-comment {
+    display: flex;
+    padding: 0px 20px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.comments-container .add-comment .profile-pic {
+    display: flex;
+}
+
+.comments-container .add-comment .profile-pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.comments-container .add-comment .add-comment-text {
+    align-self: center;
+}
+
+.comment-list-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.comment-list-container .list-item {
+    display: flex;
+    width: 100%;
+}
+
+.comment-list-container .list-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.comment-list-container .list-item .comment-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.comment-list-container .list-item .top-deck, .comment-list-container .list-item .bottom-deck {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.comment-list-container .list-item .middle-deck .comment-body-text {
+    color: #171c22;
+    padding-bottom: 8px;
+}
+
+.comment-list-container .list-item .bottom-deck .reply-cta {
+    display: flex;
+    align-items: center;
+    color: #4c8df6;
+}
+
+.comment-list-container .list-item .bottom-deck .reply-cta a {
+    margin-right: 10px;
+}
+
+.comment-list-container .list-item .bottom-deck .like-dislike-cta {
+    display: flex;
+}
+
+.comment-list-container .list-item .like-dislike-cta .like {
+    margin-right: 10px;
+}
+
+.suggest-video-list {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggest-video-list .video-card {
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transition: .1s all;
+    position: relative;
+    cursor: pointer;
+}
+
+.suggest-video-list .video-card .thumbnail {
+    height: 200px;
+}
+
+
+
+.video-player-container .video-account-detail .subscribe-btn button.confetti-button.animate::before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  
+  .video-player-container .video-account-detail .subscribe-btn button.confetti-button.animate::after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+
+  .confetti-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  
+  .confetti-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+  
+
+  .confetti-button {
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(254, 0, 0, 0.5);
+}
+
+.confetti-button:focus {
+    outline: 0;
+}
+
+.confetti-button:before {
+      display: none;
+      top: -75%;
+      background-image: radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, transparent 20%, #FE0000 20%, transparent 30%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, transparent 10%, #FE0000 15%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%);
+      background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+
+.confetti-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, transparent 10%, #FE0000 15%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%), radial-gradient(circle, #FE0000 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.confetti-button:before, .confetti-button:after {
+    position: absolute;
+    content: '';
+    display: none;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+
+.confetti-button.animtate:before, .confetti-button.animate:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+
+  @keyframes 
+  topBubbles {  0% {
+   background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+   50% {
+   background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+   100% {
+   background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+   background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+  }
+  
+  @keyframes 
+  bottomBubbles {  
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  

@@ -1,0 +1,203 @@
+.main-container {
+    margin-left: 300px;
+    margin-top: 56px;
+    overflow-y: auto;
+    display: flex;
+}
+
+.main-container .video-list-container {
+    /* width: 856px; */
+    color: #ccc;
+    padding: 20px;
+}
+
+
+.recommender-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.recommended-section .video-card {
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transition: .1s all;
+    position: relative;
+    cursor: pointer;
+}
+
+.recommended-section .video-card .play-overlay {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50px;
+    z-index: 1000;
+    transform: translate(300%, 200%);
+    opacity: 0;
+    transition: .1s all;
+}
+
+.recommended-section .video-card:hover .play-overlay {
+    transform: translate(300%, 150%);
+    opacity: 1;
+}
+
+.recommended-section .video-card:hover {
+    transform: scale(1.05);
+}
+
+.recommended-section .video-card .thumbnail {
+    height: 100%;
+    background-color: #ccc;
+    margin: 10px 0;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1532353949707-2e77707ee8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+}
+
+.recommended-section .video-card .thumbnail:after {
+    content: '';
+    position: absolute;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(90deg, #ccc, #dedede, #ccc); */
+    /* animation: progress 1s ease-in-out infinite; */
+}
+
+
+.recommended-section .video-card .meta-data {
+    position: absolute;
+    top: 10px;
+    z-index: 100;
+    color: #fff;
+    padding: 10px;
+    transition: .1s all;
+    height: 100%;
+    background: #00000052;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recommended-section .video-card .top {
+    display: flex;
+}
+
+.recommended-section .video-card .top .video-title {
+    flex: 1;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.recommended-section .video-card .middle {
+    margin-top: 10px;
+
+}
+
+.recommended-section .video-card .middle .channel-name {
+    font-size: 12px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.recommended-section .video-card .middle .video-views {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.recommended-section .video-card .bottom {
+    align-self: flex-end;
+}
+
+.uploaded-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.recently-uploaded-section .video-card {
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.recently-uploaded-section .video-card .thumbnail {
+    height: 130px;
+    background-color: #ccc;
+    margin: 10px 0;
+    margin-bottom: 0;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recently-uploaded-section .video-card .thumbnail:after {
+    content: '';
+    position: absolute;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(90deg, #ccc, #dedede, #ccc); */
+    /* animation: progress 1s ease-in-out infinite; */
+}
+
+.recently-uploaded-section .video-card .details {
+    height: 84px;
+    margin: 10px 0;
+    border-top: #bbb;
+    background-color: #ccc;
+    margin-top: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recently-uploaded-section .video-card .details:after {
+    content: '';
+    position: absolute;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(90deg, #ccc, #dedede, #ccc); */
+    /* animation: progress 1s ease-in-out infinite; */
+}
+
+.video-list-container h2 {
+    margin-top: 24px;
+    color: #0a0a0a;
+    font-size: 16px;
+}
+
+
+/* Animation */
+
+@keyframes progress {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
