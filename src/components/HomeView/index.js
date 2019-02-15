@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './style.css';
 
 const HomeView = () => {
@@ -8,7 +9,8 @@ const HomeView = () => {
                 <section className="recommended-section">
                     <h2>Recommended</h2>
                     <div className="recommender-list">
-                        <card className="video-card">
+                    <card className="video-card">
+                    <Link to={'/detail/' + 1}>
                             <div className="thumbnail"></div>
                             <div className="meta-data">
                                 <div className="top-deck">
@@ -31,6 +33,7 @@ const HomeView = () => {
     <path d='M 7 5 L 7 19 L 19 12 Z' id='surface1' />
 </svg>
                             </div>
+                        </Link>
                         </card>
                         <card className="video-card">
                                 <div className="thumbnail"></div>

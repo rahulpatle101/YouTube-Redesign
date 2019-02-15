@@ -1,0 +1,28 @@
+button.comments-tab, button.suggest-tab {
+    position: relative;
+    transition: color 0.2s ease;
+    border: none;
+}
+
+button.comments-tab.active, button.suggest-tab.active {
+    color: #4c8df6;
+}
+
+button.comments-tab.active svg, button.suggest-tab.active svg{
+    fill: #4c8df6;
+}
+
+button.comments-tab:active, button.suggest-tab:active {
+    border-style: none;
+}
+
+button.active.comments-tab:after, button.active.suggest-tab:after {
+    content: ' ';
+    position: absolute;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #4c8df6;
+}

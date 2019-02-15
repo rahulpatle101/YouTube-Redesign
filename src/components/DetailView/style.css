@@ -120,6 +120,7 @@
 
 .comments-suggest-container .tabs {
     display: flex;
+    border-bottom: 2px solid #ccc;
 }
 
 .comments-suggest-container .tabs button {
@@ -131,6 +132,8 @@
     font-size: 16px;
     background: transparent;
     outline: none;
+    transition: .2s all ease;
+    cursor: pointer;
 }
 
 .comments-container.active, .suggest-video-container.active {
