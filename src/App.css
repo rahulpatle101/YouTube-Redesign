@@ -36,3 +36,17 @@
   font-size: 14px;
   font-family: 'product_sans_regular';
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.app {
+    max-width: 1600px;
+    min-width: 768px;
+    text-align: left;
+    margin: 0px auto;
+    position: relative;
+}

@@ -4,11 +4,19 @@ button.comments-tab, button.suggest-tab {
     border: none;
 }
 
+button.comments-tab:hover, button.suggest-tab:hover {
+    color: #4c8df6;
+}
+
 button.comments-tab.active, button.suggest-tab.active {
     color: #4c8df6;
 }
 
-button.comments-tab.active svg, button.suggest-tab.active svg{
+button.comments-tab:hover svg, button.suggest-tab:hover svg {
+    fill: #4c8df6;
+}
+
+button.comments-tab.active svg, button.suggest-tab.active svg {
     fill: #4c8df6;
 }
 

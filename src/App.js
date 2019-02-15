@@ -7,10 +7,6 @@ import HomeView from './components/HomeView';
 import DetailView from './components/DetailView';
 import './App.css';
 
-// const State = {
-//   videos: Array,
-//   loading
-// }
 
 class App extends Component {
 
@@ -19,21 +15,27 @@ class App extends Component {
 
     this.state = {
       videos: [],
-      loading: false
+      loading: false,
+      toggleSidebar: false
     }
   }
+
+  handleSidebar = () => {
+    this.setState({toggleSidebar: !this.state.toggleSidebar});
+  }
+
 
   render() {
     return (
       <div className="app">
         <BrowserRouter>
           <Fragment>
-            <Header />
-            <Sidebar />
+            <Header isHidden={this.handleSidebar}/>
+            <Sidebar isHidden={this.state.sidebarToggle}/>
             <Route exact path='/' render={() => (
                 <HomeView videos={this.state.videos} loading={this.state.loading} />
             )} />
-            <Route path='/detail/:1' component={DetailView} />
+            <Route path='/detail/:video' component={DetailView} />
           </Fragment>
       </BrowserRouter>
       </div>

@@ -1,6 +1,6 @@
 .sidebar-container {
     width: 245px;
-    position: fixed;
+    position: absolute;
     top: -120px;
     right: 0;
     bottom: -120px;
@@ -105,8 +105,8 @@
 
  /* Media Queries */
 
- @media screen and (max-width: 1200px) {
-    .sidebar-container .content {
+ @media screen and (max-width: 992px) {
+    .sidebar-container {
         display: none;
     }
 }

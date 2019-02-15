@@ -1,23 +1,36 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom'
 import './style.css';
 
-const Header = () => {
+class Header extends Component {
+    constructor(props) {
+		super(props);
+		this.state = {
+            activeTab: 1
+		};
+    }
+    
+    componentDidMount() {
+        this.setState({
+            activeTab: 1
+        });
+    }
+    render() {
+
     return (
         <div className="youtube-container">
             <header>
                 <div className="sidebar-icon">
-                    <button>
-                        <svg viewBox='0 0 24 24' style={{ width: '100%', height: '100%' }} pointerEvents='none'
+                    <button onClick={this.props.isHidden}>
+                        <svg viewBox='0 0 24 24' style={{ width: '100%', height: '24px' }} pointerEvents='none'
                             display='block'>
                             <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z' />
                         </svg>
                     </button>
                 </div>
                 <div className="youtube-logo">
-
-
-                    <a href="">
-                        <svg viewBox="0 0 200 60" style={{ width: '100%', height: '100%' }} pointerEvents="none"
+                    <Link to="/">
+                        <svg viewBox="0 0 200 60" style={{ width: '100%', height: '24px' }} pointerEvents="none"
                             display="block">
                             <path fill="#F00" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31 c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56 C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30 S64.31,19.77,63,14.87z"
                             />
@@ -41,7 +54,7 @@ const Header = () => {
                                 </g>
                             </g>
                         </svg>
-                    </a>
+                    </Link>
                 </div>
                 <div className="search-bar">
                     <form className="search-container">
@@ -93,5 +106,6 @@ const Header = () => {
     )
 
 }
+    }
 
 export default Header;
